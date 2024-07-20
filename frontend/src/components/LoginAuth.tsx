@@ -14,7 +14,7 @@ export const LoginAuth = () => {
     async function sendRequest(){
         console.log("inside fn")
         try{
-            const response = await axios.post(`${BACKEND_URL}/api/v1/user/signin`,{
+            const response = await axios.post(`${BACKEND_URL}/api/v1/auth/signin`,{
                 username: postInputs.username,
                 password: postInputs.password
             });
