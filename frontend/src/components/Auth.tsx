@@ -16,7 +16,7 @@ export const Auth = () => {
         console.log("inside fn")
         try{
             // const response = 
-            await axios.post(`${BACKEND_URL}/api/v1/user/signup`,{
+            await axios.post(`${BACKEND_URL}/api/v1/auth/signup`,{
                 name: postInputs.name,
                 username: postInputs.username,
                 password: postInputs.password
